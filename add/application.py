@@ -1,6 +1,6 @@
 from pages.main_page import MainPage
 from pages.header import Header
-from pages.search_results_page import SearchResultsPage
+from pages.search_results import SearchResultsPage
 
 
 class Application:
@@ -10,7 +10,4 @@ class Application:
         self.header = Header(driver)
         self.search_results_page = SearchResultsPage(driver)
 
-add = Application(driver)
-add.main_page
-add.header
-add.search_results_page
+
