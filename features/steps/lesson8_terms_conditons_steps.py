@@ -8,7 +8,7 @@ from time import sleep
 
 @given('Open sign in page')
 def open_sign_in_page(context):
-    context.add.open_target_signin_page.open_sign_in_page()
+    context.add.signin_page.open_sign_in_page()
 
 @given('Store original window')
 def store_original_window(context):

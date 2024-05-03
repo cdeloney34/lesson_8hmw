@@ -7,4 +7,4 @@ class TermsAndConditions(Page):
     TAC_verify = (By.CSS_SELECTOR, "[data-test='@web/Breadcrumbs/BreadcrumbLink']")
 
     def verify_terms_and_conditions(self):
-        self.find_element(self.TAC_verify)
+        self.find_element(*self.TAC_verify)

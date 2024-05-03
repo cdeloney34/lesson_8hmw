@@ -11,7 +11,7 @@ class SigninPage(Page):
 
 
     def verify_signin(self):
-        self.find_element(self.verify_signin_form)
+        self.find_element(*self.verify_signin_form)
 
     def click_tal_link(self):
         self.click(*self.TAL_LINK)
