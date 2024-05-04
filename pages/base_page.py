@@ -71,7 +71,7 @@ class Page:
         self.wait.until(EC.url_matches(expected_url),message='Url does not contain {partial text}')
 
     def save_screenshot(self, name):
-        self.driver.save_screenshot(f'{name}, png')
+        self.driver.save_screenshot(f'{name}.png')
 
     def close(self):
         self.driver.close()

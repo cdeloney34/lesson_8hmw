@@ -15,11 +15,11 @@ def store_original_window(context):
     #context.original_window = context.driver.current_window_handle
     #print('Current:', context.original_window)
     #print('All window:', context.driver.current_window_handles)
-    context.original_window = context.add.target_signin_page.get_curent_window()
+    context.original_window = context.add.signin_page.get_curent_window()
 
 @when('Click on Target terms and condition link')
 def click_tal(context):
-    context.add.target_signin_page.click_tal_link()
+    context.add.signin_page.click_tal_link()
 
 
 
@@ -29,11 +29,11 @@ def verify_terms_and_conditions_pg(context):
 
 @when('User can close new window')
 def switch_widow(context):
-    context.add.target_signin_page.switch_widow()
+    context.add.signin_page.switch_widow()
 
 @when('Close current page')
 def close(context):
-    context.add.target_signin_page.close()
+    context.add.signin_page.close()
 
 
 @then('switch back to original')
